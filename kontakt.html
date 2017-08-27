@@ -7,12 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 </head>
 <body>
-	
+<div id="kontaktbox">
 	<form action="https://formspree.io/mariabanel@gmail.com" method="POST">
 	    <input type="text" name="name">
 	    <input type="email" name="_replyto">
 	    <input type="submit" value="Send">
+	<input type="hidden" name="_next" value="<script>$('#kontaktbox').innerHTML('wysłano');</script>"/>
 	</form>
-
+</div>
 </body>
 </html>
