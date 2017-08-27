@@ -5,31 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/menu.js"></script>
 </head>
 <body>
-<div class="container-fluid" id="maincon">
-	<section class="row">
-		<div class="col-sm-12">
-			<div class="greenbox" id="kontaktbox">
-				<form id='contact_form' method="POST" action="https://formspree.io/mariabanel@gmail.com">
-					<input type="text" name="imie" placeholder="Imię"><br><br>
-					<input type="text" name="_replyto" placeholder="E-mail"><br><br>
-					<textarea name="tresc" rows="5" cols="40" placeholder="Treść wiadomości"></textarea><br><br>
-					<input type="submit" name="submit" value="Wyślij">
-				</form>
-			</div>
-		</section>
-	</div>
-  </div>
+	
+	<form action="https://formspree.io/mariabanel@gmail.com" method="POST">
+	    <input type="text" name="name">
+	    <input type="email" name="_replyto">
+	    <input type="submit" value="Send">
+	</form>
 
 </body>
 </html>
