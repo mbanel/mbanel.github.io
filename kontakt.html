@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/menu.js"></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-fixed-top" id="wholenav">
+		<div class="container-fluid">
+			<div class="navbar-header navbar-left">
+				<a class="navbar-brand" href="#" id="mybrand">MBanel</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				<ul class="nav navbar-nav text-uppercase">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Edukacja<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Liceum</a></li>
+							<li><a href="#">Politechnika</a></li>
+							<li><a href="#">SWPS</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kontakt</a>
+					</li>
+					<li class="dropdown" id="lang">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">pl<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">eng</a></li>
+							<li><a href="#">it</a></li>
+							<li><a href="#">ru</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+<div class="container-fluid" id="maincon">
+	<section class="row">
+		<div class="col-sm-12">
+			<div class="greenbox" id="kontaktbox">
+				<form id='contact_form' method="POST" action="https://formspree.io/mariabanel@gmail.com">
+					<input class="required" type="text" name="imie" placeholder="Imię"/><br><br>
+					<input class="required email" type="text" name="_replyto" placeholder="E-mail"/><br><br>
+					<textarea class="required" name="tresc" rows="5" cols="40" placeholder="Treść wiadomości"></textarea><br><br>
+					<input type="submit" name="submit" value="Wyślij">
+					<input type="hidden" name="_next" value="<script>$('#kontaktbox').innerHTML('wysłano');</script>"/>
+					<input type="hidden" name="_language" value="pl"/>
+			</form>
+			</div>
+		</section>
+	</div>
+  </div>
+
+</body>
+</html>
