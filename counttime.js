@@ -26,7 +26,7 @@ function countDate() {
 	var secs = Math.floor((xMins-mins)*60);
 	
 	var divText = days+" days &</br>"+hours+":"+zero(mins)+":"+zero(secs)+"</br>";
-	//var divText = "hehe";
+	
 	var element = document.getElementById('time');
 	if(dateDiff<0) {
 		element.innerHTML = "NULL!!!";

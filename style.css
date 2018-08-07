@@ -11,20 +11,18 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: url("./dots.jpg") repeat;
+	color:black;
 }
 h1 {
 	margin-bottom: 5px;
 }
-p {
+#p-footer {
 	width: 100%;
 	font-size: 16px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	text-align: center;
-}
-footer {
-	display: block;
 }
 @media screen and (max-width: 600px) {
 	#container {
@@ -33,4 +31,42 @@ footer {
 	p {
 		font-size: 12px;
 	}
+}
+#menu {
+	text-align:center;
+}
+.a-menu, .a-link {
+	text-decoration:none;
+	color:black;
+}
+.a-menu {
+	 margin-right:30px;
+}
+.a-last {
+	margin-right:0px;
+}
+.a-menu:hover, .cont h4:hover, .a-link {
+	color:#7A4A4B;
+	cursor:pointer;
+}
+.cont {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	max-width: 1000px;
+	text-align:center;
+}
+button {
+	padding: 10px 20px;
+	margin: 20px;
+	background-color:Transparent;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor:pointer;
+	font-family: 'Open Sans', sans-serif;
+}
+button:hover {
+	background-color:#cc7e80;
+	transition-duration: 0.4s;
+	text-decoration:bold;
 }
