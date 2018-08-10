@@ -16,14 +16,6 @@ body {
 h1 {
 	margin-bottom: 5px;
 }
-#p-footer {
-	width: 100%;
-	font-size: 16px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	text-align: center;
-}
 @media screen and (max-width: 600px) {
 	#container {
 		font-size: 25px;
@@ -34,10 +26,12 @@ h1 {
 }
 #menu {
 	text-align:center;
+	font-size:100%;
 }
 .a-menu, .a-link {
 	text-decoration:none;
 	color:black;
+	font-size: 100%;
 }
 .a-menu {
 	 margin-right:30px;
@@ -64,9 +58,17 @@ button {
 	border-radius: 5px;
 	cursor:pointer;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
 }
 button:hover {
 	background-color:#cc7e80;
 	transition-duration: 0.4s;
 	text-decoration:bold;
+}
+h3 {
+	font-size: 150%;
+	text-decoration:none;
+}
+h4 {
+	font-size: 100%;
 }
